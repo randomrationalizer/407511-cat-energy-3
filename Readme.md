@@ -1,8 +1,8 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Маргарита Еремина](https://up.htmlacademy.ru/adaptive-individual/3/user/407511).
-* Наставник: `Неизвестно`.
-
+* Наставник: [Ирина Антипина](https://htmlacademy.ru/profile/id2108789).
+* Проект: [Cat Energy](https://randomrationalizer.github.io/407511-cat-energy-3/)
 ---
 
 **Обратите внимание, что папка с вашими исходными файлами для работы над проектом — `source/`.**
