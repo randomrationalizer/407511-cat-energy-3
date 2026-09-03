@@ -1,0 +1,23 @@
+.program {
+  background-color: $bg-color-secondary;
+}
+
+.program__title {
+  font-family: $font-secondary;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+}
+
+.program__description {
+  color: $text-color-secondary;
+}
+
+.program__link {
+  font-family: $font-secondary;
+  font-size: 16px;
+  line-height: 16px;
+  color: inherit;
+  text-decoration: none;
+  text-transform: uppercase;
+}

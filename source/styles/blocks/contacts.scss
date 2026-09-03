@@ -1,0 +1,17 @@
+.contacts__header {
+  background-color: $bg-color-basic;
+}
+
+.contacts__title {
+  font-family: $font-secondary;
+  font-size: 16px;
+  line-height: 20px;
+  color: $text-color-additional;
+  text-transform: uppercase;
+}
+
+.contacts__text {
+  font-size: 14px;
+  line-height: 20px;
+  color: $text-color-secondary;
+}
