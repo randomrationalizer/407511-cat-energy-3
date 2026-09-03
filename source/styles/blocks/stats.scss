@@ -1,0 +1,19 @@
+.stats__property {
+  font-size: 12px;
+  line-height: 12px;
+  color: $text-color-secondary;
+}
+
+.stats__value {
+  font-family: $font-secondary;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.stats__legend {
+  font-family: $font-secondary;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
