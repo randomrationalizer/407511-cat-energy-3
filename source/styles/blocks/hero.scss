@@ -1,10 +1,9 @@
 .hero {
-  font-family: $font-secondary;
   color: $text-color-contrast;
+  text-align: center;
   background-color: $bg-color-contrast;
 }
 
 .hero__slogan {
-  font-size: 14px;
-  line-height: 14px;
+  @include title-uppercase(14);
 }

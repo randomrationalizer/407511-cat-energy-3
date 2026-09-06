@@ -3,5 +3,5 @@
 }
 
 .advantages__item {
-  color: $text-color-secondary;
+  @include text;
 }

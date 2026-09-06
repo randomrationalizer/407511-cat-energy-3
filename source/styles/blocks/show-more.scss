@@ -1,0 +1,12 @@
+.show-more {
+  text-align: center;
+}
+
+.show-more__title {
+  @include title-uppercase(16, 20);
+  color: $text-color-additional;
+}
+
+.show-more__text {
+  @include text(12,16);
+}

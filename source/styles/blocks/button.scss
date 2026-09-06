@@ -1,9 +1,19 @@
 .button {
-  font-family: $font-secondary;
-  font-size: 16px;
-  line-height: 20px;
-  color: $text-color-contrast;
-  text-decoration: none;
-  text-transform: uppercase;
-  background-color: $bg-color-contrast;
+  @include link-uppercase(16, 20);
+  text-align: center;
+
+  &--primary {
+    color: $text-color-contrast;
+    background-color: $bg-color-contrast;
+  }
+
+  &--secondary {
+    color: $text-color-secondary;
+    background-color: $bg-color-secondary;
+  }
+
+  &--size-xl {
+    font-size: 20px;
+    line-height: 26px;
+  }
 }

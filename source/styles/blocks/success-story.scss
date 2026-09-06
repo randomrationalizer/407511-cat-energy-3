@@ -3,5 +3,5 @@
 }
 
 .success-story__description {
-  color: $text-color-secondary;
+  @include text;
 }

@@ -1,17 +1,16 @@
 .contacts__header {
-  background-color: $bg-color-basic;
+  background-color: $bg-color-secondary;
+
+  &--index {
+    background-color: $bg-color-basic;
+  }
 }
 
 .contacts__title {
-  font-family: $font-secondary;
-  font-size: 16px;
-  line-height: 20px;
+  @include title-uppercase(16, 20);
   color: $text-color-additional;
-  text-transform: uppercase;
 }
 
 .contacts__text {
-  font-size: 14px;
-  line-height: 20px;
-  color: $text-color-secondary;
+  @include text(14,20);
 }

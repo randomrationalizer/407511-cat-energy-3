@@ -1,0 +1,6 @@
+.promotion {
+  @include text(16,20);
+  color: $text-color-contrast;
+  text-align: center;
+  background-color: $bg-color-contrast;
+}

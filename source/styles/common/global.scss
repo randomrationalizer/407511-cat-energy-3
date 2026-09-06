@@ -3,9 +3,21 @@
 body {
   margin: 0;
   font-family: $font-primary;
-  font-size: 14px;
-  line-height: 18px;
+  font-size: $font-size-basic;
+  line-height: $line-height-basic;
   color: $text-color-basic;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 .visually-hidden {

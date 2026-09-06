@@ -1,0 +1,8 @@
+.product__title {
+  @include title-uppercase(16);
+  color: $text-color-special;
+}
+
+.product__description {
+  @include text(14,14);
+}
