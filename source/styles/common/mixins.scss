@@ -37,7 +37,8 @@
   line-height: $line-height + px;
   font-weight: 400;
   text-transform: uppercase;
-  color: $text-color-secondary;
+  color: $input-text-color;
+  background-color: $input-bg-color;
 }
 
 @mixin text ($args...) {

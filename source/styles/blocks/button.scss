@@ -3,13 +3,13 @@
   text-align: center;
 
   &--primary {
-    color: $text-color-contrast;
-    background-color: $bg-color-contrast;
+    color: $button-primary-text;
+    background-color: $button-primary;
   }
 
   &--secondary {
-    color: $text-color-secondary;
-    background-color: $bg-color-secondary;
+    color: $button-secondary-text;
+    background-color: $button-secondary;
   }
 
   &--size-xl {

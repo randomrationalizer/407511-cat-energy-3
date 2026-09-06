@@ -15,3 +15,12 @@ $text-color-secondary: #444444;
 $text-color-contrast: #ffffff;
 $text-color-additional: #111111;
 $text-color-special: #222222;
+
+$button-primary: $bg-color-contrast;
+$button-primary-text: $text-color-contrast;
+$button-secondary: $bg-color-secondary;
+$button-secondary-text: $text-color-secondary;
+
+$input-bg-color: $bg-color-basic;
+$input-text-color: $text-color-secondary;
+$input-placeholder-color: $text-color-secondary;

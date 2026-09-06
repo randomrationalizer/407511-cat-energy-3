@@ -2,6 +2,6 @@
   @include input(20);
 
   &::placeholder {
-    color: $text-color-secondary;
+    color: $input-placeholder-color;
   }
 }
