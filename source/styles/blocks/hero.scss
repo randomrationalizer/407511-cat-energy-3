@@ -1,0 +1,9 @@
+.hero {
+  color: $text-color-contrast;
+  text-align: center;
+  background-color: $bg-color-contrast;
+}
+
+.hero__slogan {
+  @include title-uppercase(14);
+}

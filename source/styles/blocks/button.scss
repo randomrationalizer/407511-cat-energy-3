@@ -1,0 +1,19 @@
+.button {
+  @include link-uppercase(16, 20);
+  text-align: center;
+
+  &--primary {
+    color: $button-primary-text;
+    background-color: $button-primary;
+  }
+
+  &--secondary {
+    color: $button-secondary-text;
+    background-color: $button-secondary;
+  }
+
+  &--size-xl {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}

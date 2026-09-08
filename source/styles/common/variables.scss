@@ -1,1 +1,26 @@
 /* здесь используйте глобальные переменные */
+$font-primary: "Lato", sans-serif;
+$font-secondary: "Oswald", sans-serif;
+
+$font-size-basic: 14px;
+$line-height-basic: 18px;
+
+$bg-color-basic: #ffffff;
+$bg-color-secondary: #f2f2f2;
+$bg-color-additional: #eaeaea;
+$bg-color-contrast: #68b738;
+
+$text-color-basic: #000000;
+$text-color-secondary: #444444;
+$text-color-contrast: #ffffff;
+$text-color-additional: #111111;
+$text-color-special: #222222;
+
+$button-primary: $bg-color-contrast;
+$button-primary-text: $text-color-contrast;
+$button-secondary: $bg-color-secondary;
+$button-secondary-text: $text-color-secondary;
+
+$input-bg-color: $bg-color-basic;
+$input-text-color: $text-color-secondary;
+$input-placeholder-color: $text-color-secondary;

@@ -1,0 +1,16 @@
+.contacts__header {
+  background-color: $bg-color-secondary;
+
+  &--index {
+    background-color: $bg-color-basic;
+  }
+}
+
+.contacts__title {
+  @include title-uppercase(16, 20);
+  color: $text-color-additional;
+}
+
+.contacts__text {
+  @include text(14,20);
+}

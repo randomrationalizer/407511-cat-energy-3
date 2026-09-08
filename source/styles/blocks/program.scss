@@ -1,0 +1,15 @@
+.program {
+  background-color: $bg-color-secondary;
+}
+
+.program__title {
+  @include title-uppercase(24, 37);
+}
+
+.program__description {
+  @include text;
+}
+
+.program__link {
+  @include link-uppercase(16);
+}

@@ -1,0 +1,7 @@
+.input {
+  @include input(20);
+
+  &::placeholder {
+    color: $input-placeholder-color;
+  }
+}

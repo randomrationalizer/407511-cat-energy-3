@@ -1,0 +1,11 @@
+.stats__property {
+  @include text(12);
+}
+
+.stats__value {
+  @include title-uppercase(24);
+}
+
+.stats__legend {
+  @include title-uppercase(14,20);
+}

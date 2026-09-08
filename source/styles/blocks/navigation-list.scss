@@ -1,0 +1,4 @@
+.navigation-list__link {
+  @include link-uppercase(20);
+  color: inherit;
+}
