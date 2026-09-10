@@ -1,11 +1,8 @@
 /* здесь используйте глобальные селекторы img, body, html и так далее */
-
-body {
-  margin: 0;
-  font-family: $font-primary;
-  font-size: $font-size-basic;
-  line-height: $line-height-basic;
-  color: $text-color-basic;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 img {
@@ -14,10 +11,12 @@ img {
   object-fit: contain;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+body {
+  margin: 0;
+  font-family: $font-primary;
+  font-size: $font-size-basic;
+  line-height: $line-height-basic;
+  color: $text-color-basic;
 }
 
 .visually-hidden {

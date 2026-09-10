@@ -42,7 +42,6 @@
 }
 
 @mixin text ($args...) {
-  // Если миксин вызван без аргументов, то наследуются параметры текста из body
   @if length($args) > 0 {
     font-size: list.nth($args, 1) + px;
 
@@ -53,6 +52,11 @@
     @else {
       line-height: list.nth($args, 1) + px;
     }
+  }
+  // Если миксин вызван без аргументов, то применияются параметры текста по умолчанию
+  @else {
+    font-size: $font-size-basic;
+    line-height: $line-height-basic;
   }
   color: $text-color-secondary;
 }

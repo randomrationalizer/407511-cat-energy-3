@@ -3,4 +3,16 @@
   color: $text-color-contrast;
   text-align: center;
   background-color: $bg-color-contrast;
+
+  &::before {
+    display: block;
+    width: 78px;
+    height: 81px;
+    content: "";
+    background-color: $icon-color-contrast;
+    mask-image: url("../../icons/stack.svg#icon-gift");
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    mask-position: center;
+  }
 }

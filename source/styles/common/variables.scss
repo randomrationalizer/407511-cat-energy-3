@@ -9,6 +9,7 @@ $bg-color-basic: #ffffff;
 $bg-color-secondary: #f2f2f2;
 $bg-color-additional: #eaeaea;
 $bg-color-contrast: #68b738;
+$bg-color-accent: #000000;
 
 $text-color-basic: #000000;
 $text-color-secondary: #444444;
@@ -24,3 +25,9 @@ $button-secondary-text: $text-color-secondary;
 $input-bg-color: $bg-color-basic;
 $input-text-color: $text-color-secondary;
 $input-placeholder-color: $text-color-secondary;
+
+$icon-color:$text-color-basic;
+$icon-color-hover: $bg-color-contrast;
+$icon-color-accent: $bg-color-contrast;
+$icon-color-contrast: $text-color-contrast;
+$icon-color-additional: #666666;
