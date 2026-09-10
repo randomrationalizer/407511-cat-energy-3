@@ -3,6 +3,10 @@
   color: $text-color-contrast;
   text-align: center;
   background-color: $bg-color-contrast;
+  background-image: linear-gradient($bg-layout 50%, $bg-layout 50%), url("../../images/background/promo-background@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 
   &::before {
     display: block;

@@ -1,7 +1,16 @@
 .hero {
   color: $text-color-contrast;
   text-align: center;
-  background-color: $bg-color-contrast;
+  background-color: $bg-color-basic;
+
+  background-image:
+    linear-gradient($bg-layout 50%, $bg-color-basic 50%),
+    url("../../images/background/index-background@1x.jpg"),
+    linear-gradient($bg-gradient-1 25%, $bg-gradient-2 50%, $bg-gradient-3 75%),
+    linear-gradient($bg-color-contrast 50%, $bg-color-basic 50%);
+  background-repeat: no-repeat;
+  background-position: center, center -30px, center, center;
+  background-size: cover, auto 302px, cover, cover;
 }
 
 .hero__slogan {
