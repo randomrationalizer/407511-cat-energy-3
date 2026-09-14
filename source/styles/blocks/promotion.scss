@@ -3,4 +3,20 @@
   color: $text-color-contrast;
   text-align: center;
   background-color: $bg-color-contrast;
+  background-image: linear-gradient($bg-layout 50%, $bg-layout 50%), url("../../images/background/promo-background@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  &::before {
+    display: block;
+    width: 78px;
+    height: 81px;
+    content: "";
+    background-color: $icon-color-contrast;
+    mask-image: url("../../icons/stack.svg#icon-gift");
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    mask-position: center;
+  }
 }

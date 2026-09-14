@@ -4,4 +4,39 @@
 
 .advantages__item {
   @include text;
+
+  &::before {
+    display: block;
+    width: 60px;
+    height: 60px;
+    content: "";
+    background-color: $icon-color-accent;
+    background-size: 30px 32px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--natural {
+    &::before {
+      background-image: url("../../icons/stack.svg#icon-natural");
+    }
+  }
+
+  &--cooking {
+    &::before {
+      background-image: url("../../icons/stack.svg#icon-cooking");
+    }
+  }
+
+  &--meal {
+    &::before {
+      background-image: url("../../icons/stack.svg#icon-meal");
+    }
+  }
+
+  &--time {
+    &::before {
+      background-image: url("../../icons/stack.svg#icon-time");
+    }
+  }
 }

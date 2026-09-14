@@ -1,3 +1,39 @@
 .social {
   //стили
 }
+
+.social__link {
+  display: block;
+  width: 28px;
+  height: 22px;
+  color: $icon-color-additional;
+
+  &::before {
+    display: block;
+    width: 28px;
+    height: 22px;
+    content: "";
+    background-color: currentColor;
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    mask-position: center;
+  }
+
+  &--vk {
+    &::before {
+      mask-image: url("../../icons/stack.svg#social-vk");
+    }
+  }
+
+  &--youtube {
+    &::before {
+      mask-image: url("../../icons/stack.svg#social-youtube");
+    }
+  }
+
+  &--tg {
+    &::before {
+      mask-image: url("../../icons/stack.svg#social-telegram");
+    }
+  }
+}
