@@ -1,13 +1,8 @@
-.catalog {
-  background-color: $bg-color-basic;
-}
-
-.catalog__list {
-  margin: 0;
+.container {
+  margin: 0 auto;
+  width: calc(100% - 2 * $page-padding-mobile);
 
   @media (min-width: $width-tablet) {
-    margin-left: auto;
-    margin-right: auto;
     width: calc(100% - 2 * $page-padding-tablet);
   }
 

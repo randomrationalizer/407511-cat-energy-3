@@ -1,3 +1,15 @@
 .slider {
-  //стили
+  position: relative;
+}
+
+.slider__image {
+  position: absolute;
+
+  &--before {
+    clip-path: inset(0 50% 0 0);
+  }
+
+  &--after {
+    clip-path: inset(0 0 0 50%);
+  }
 }
