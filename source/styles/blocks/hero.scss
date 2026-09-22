@@ -20,17 +20,7 @@
   }
 
   @media (min-width: $width-desktop) {
-    padding-top: 143px;
-    background-color: $bg-color-contrast;
-
-    background-image:
-      linear-gradient(to right, $bg-color-basic 50%, $bg-layout 50%),
-      url("../../images/background/index-background@1x.jpg"),
-      linear-gradient($bg-gradient-1 25%, $bg-gradient-2 50%, $bg-gradient-3 75%),
-      linear-gradient(to right, $bg-color-basic 50%, $bg-color-contrast 50%);
-    background-repeat: no-repeat;
-    background-position: 50%, bottom 0 right -300px, 50%, 50%;
-    background-size: cover, auto 100%, cover, cover;
+    background-color: transparent;
   }
 }
 

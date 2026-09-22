@@ -16,9 +16,6 @@
 
   &--index {
     @media (min-width: $width-desktop) {
-      position: absolute;
-      left: 0;
-      right: 0;
       color: $text-color-contrast;
     }
   }
