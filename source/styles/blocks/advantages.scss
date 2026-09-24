@@ -23,6 +23,7 @@
 
 .advantages__list {
   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 24px;
   counter-reset: list-item 0;
   margin: 0;
