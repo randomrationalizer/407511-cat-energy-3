@@ -13,3 +13,9 @@
     gap: 63px 80px;
   }
 }
+
+.card-list__more {
+  @media (min-width: $width-tablet) {
+    align-self: end;
+  }
+}

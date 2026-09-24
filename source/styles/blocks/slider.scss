@@ -1,15 +1,19 @@
-.slider {
-  position: relative;
+.slider__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
 }
 
-.slider__image {
-  position: absolute;
+.slider__before {
+  grid-column: 1 / -1;
+  grid-row: 1;
+  clip-path: inset(0 50% 0 0);
+  z-index: 2;
+}
 
-  &--before {
-    clip-path: inset(0 50% 0 0);
-  }
-
-  &--after {
-    clip-path: inset(0 0 0 50%);
-  }
+.slider__after {
+  grid-column: 1 / -1;
+  grid-row: 1;
+  clip-path: inset(0 0 0 50%);
+  z-index: 3;
 }

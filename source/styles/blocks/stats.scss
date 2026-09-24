@@ -7,6 +7,7 @@
 
   @media (min-width: $width-desktop) {
     grid-template-columns: 367px;
+    row-gap: 60px;
   }
 }
 
@@ -14,10 +15,11 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 32px;
-  margin: 0;
+  margin: 0 0 34px;
 
   @media (min-width: $width-tablet) {
     gap: 43px;
+    margin-bottom: 0;
   }
 }
 
@@ -60,11 +62,16 @@
 }
 
 .stats__legend {
+  margin: 0;
   text-align: center;
 
   @include title-uppercase(14,20);
 
   @media (min-width: $width-tablet) {
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 9px;
+    align-content: center;
     text-align: right;
   }
 
