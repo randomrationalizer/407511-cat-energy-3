@@ -21,8 +21,8 @@
         linear-gradient($bg-gradient-1 25%, $bg-gradient-2 50%, $bg-gradient-3 75%),
         linear-gradient(to right, $bg-color-basic 50%, $bg-color-contrast 50%);
       background-repeat: no-repeat;
-      background-position: top 0 right 0, top 0 right -300px, top 0 right 0;
-      background-size: auto 694px, auto 694px, auto 694px, auto 694px;
+      background-position: top 0 right 0, top 0 right -300px, top 0 right 0, top 0 right 0;
+      background-size: auto 695px, auto 694px, auto 694px, auto 695px;
     }
 
     @media (min-width: $bg-breakpoint) {
@@ -32,8 +32,8 @@
         linear-gradient($bg-gradient-1 25%, $bg-gradient-2 50%, $bg-gradient-3 75%),
         linear-gradient(to right, $bg-color-basic 50%, $bg-color-contrast 50%);
       background-repeat: no-repeat;
-      background-position: top 0 right 0, top 0 right 0, top 0 right 0;
-      background-size: auto 694px, auto 694px, auto 694px, auto 694px;
+      background-position: top 0 right 0, top 0 right 0, top 0 right 0, top 0 right 0;
+      background-size: auto 695px, auto 694px, auto 694px, auto 695px;
     }
   }
 }

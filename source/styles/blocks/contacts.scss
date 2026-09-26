@@ -57,11 +57,12 @@
   height: 362px;
 
   @media (min-width: $width-tablet) {
-    height: 400px;
+    min-height: 400px;
   }
 
   @media (min-width: $width-desktop) {
     grid-row: 1 / -1;
     grid-column: 1 / -1;
+    height: 100%;
   }
 }

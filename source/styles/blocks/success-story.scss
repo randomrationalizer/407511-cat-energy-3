@@ -4,12 +4,12 @@
 
   @media (min-width: $width-tablet) {
     padding: 45px 0 101px;
-    background-image: linear-gradient(to top, transparent 462px, $bg-color-basic 462px);
+    background-image: linear-gradient(to top, $bg-color-additional 0, $bg-color-additional 462px, $bg-color-basic 462px);
   }
 
   @media (min-width: $width-desktop) {
     padding: 0 0 75px;
-    background-image: linear-gradient(to bottom, $bg-color-basic 135px, transparent 135px);
+    background-image: linear-gradient(to bottom, $bg-color-basic 0, $bg-color-basic 135px, $bg-color-additional 135px);
   }
 }
 
