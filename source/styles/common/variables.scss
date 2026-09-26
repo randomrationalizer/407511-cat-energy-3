@@ -5,6 +5,18 @@ $font-secondary: "Oswald", "Arial", sans-serif;
 $font-size-basic: 14px;
 $line-height-basic: 18px;
 
+$font-size-counter: 280px;
+
+$page-padding-mobile: 20px;
+$page-padding-tablet: 30px;
+$page-padding-desktop: 40px;
+
+$width-mobile: 320px;
+$width-tablet: 768px;
+$width-desktop: 1300px;
+$width-content: calc($width-desktop - 2 * $page-padding-desktop);
+$bg-breakpoint: 1600px;
+
 $bg-color-basic: #ffffff;
 $bg-color-secondary: #f2f2f2;
 $bg-color-additional: #eaeaea;
@@ -30,8 +42,14 @@ $input-bg-color: $bg-color-basic;
 $input-text-color: $text-color-secondary;
 $input-placeholder-color: $text-color-secondary;
 
-$icon-color:$text-color-basic;
+$icon-color: $text-color-basic;
 $icon-color-hover: $bg-color-contrast;
 $icon-color-accent: $bg-color-contrast;
 $icon-color-contrast: $text-color-contrast;
 $icon-color-additional: #666666;
+$icon-color-special: #d3d3d3;
+
+$border-color: #e6e6e6;
+$border-color-secondary: #ebebeb;
+$border-color-additional: #d9d9d9;
+$border-color-special: #cdcdcd;

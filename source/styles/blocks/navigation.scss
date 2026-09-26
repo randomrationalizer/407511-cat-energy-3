@@ -1,3 +1,61 @@
 .navigation {
-  //стили
+  @media (min-width: $width-tablet) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 33px;
+    align-items: center;
+  }
+}
+
+.navigation__wrapper {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  align-items: center;
+  padding: 0 $page-padding-mobile 15px;
+  border-bottom: 1px solid $border-color;
+
+  @media (min-width: $width-tablet) {
+    grid-template-columns: auto auto;
+    gap: 13px;
+    align-self: start;
+    margin-right: auto;
+    padding: 0;
+    border-bottom: none;
+  }
+
+  @media (min-width: $width-desktop) {
+    gap: 14px;
+    align-self: start;
+  }
+}
+
+.navigation__toggle {
+  display: block;
+  width: 18px;
+  height: 18px;
+  justify-self: end;
+
+  @media (min-width: $width-tablet) {
+    display: none;
+  }
+}
+
+.navigation__list {
+  margin: 0;
+
+  @media (min-width: $width-desktop) {
+    max-width: 50%;
+  }
+}
+
+.navigation__logo-text {
+  justify-self: center;
+}
+
+.logo-text__image {
+  @media (min-width: $width-desktop) {
+    width: 118px;
+    height: 21px;
+  }
 }

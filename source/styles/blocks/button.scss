@@ -1,6 +1,11 @@
 .button {
+  display: block;
+  padding: 10px 15px;
+
   @include link-uppercase(16, 20);
   text-align: center;
+  border: none;
+  cursor: pointer;
 
   &--primary {
     color: $button-primary-text;

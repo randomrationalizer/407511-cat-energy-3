@@ -1,5 +1,8 @@
 .input {
+  padding: 13px;
+
   @include input(20);
+  border: 1px solid $border-color-special;
 
   &::placeholder {
     color: $input-placeholder-color;

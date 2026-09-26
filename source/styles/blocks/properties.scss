@@ -1,3 +1,16 @@
 .properties {
   @include text(12,16);
 }
+
+.properties__item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.properties__name {
+  justify-self: start;
+}
+
+.properties__value {
+  justify-self: end;
+}

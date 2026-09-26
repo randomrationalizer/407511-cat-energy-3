@@ -1,8 +1,51 @@
 .advantages {
+  padding: 20px 0 49px;
   background-color: $bg-color-basic;
+
+  @media (min-width: $width-tablet) {
+    padding: 45px 0 47px;
+    border-bottom: 1px solid $border-color;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding: 71px 0 69px;
+    border: none;
+  }
+}
+
+.advantages__title {
+  margin: 0 0 40px;
+
+  @media (min-width: $width-tablet) {
+    margin-bottom: 32px;
+  }
+}
+
+.advantages__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  counter-reset: list-item 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @media (min-width: $width-tablet) {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 37px;
+  }
+
+  @media (min-width: $width-desktop) {
+    grid-template-columns: 1fr 1fr 1fr 20%;
+  }
 }
 
 .advantages__item {
+  display: grid;
+  grid-template-columns: 60px 200px;
+  gap: 20px;
+  counter-increment: list-item 1;
+
   @include text;
 
   &::before {
@@ -14,6 +57,43 @@
     background-size: 30px 32px;
     background-repeat: no-repeat;
     background-position: center;
+  }
+
+  @media (min-width: $width-tablet) {
+    position: relative;
+    z-index: 2;
+    grid-template-columns: auto;
+    grid-template-rows: 80px auto;
+    gap: 31px 0;
+    justify-self: start;
+    max-width: 250px;
+    min-height: $font-size-counter;
+    padding: 40px 0 13px;
+
+    &::before {
+      width: 80px;
+      height: 80px;
+      z-index: 2;
+    }
+
+    &::after {
+      position: absolute;
+      display: block;
+      z-index: -1;
+      top: 0;
+      right: 0;
+      height: 100%;
+      width: auto;
+      content: counter(list-item);
+      font-family: $font-secondary;
+      font-size: $font-size-counter;
+      line-height: $font-size-counter;
+      color: $bg-color-secondary;
+    }
+  }
+
+  @media (min-width: $width-desktop) {
+    max-width: 248px;
   }
 
   &--natural {

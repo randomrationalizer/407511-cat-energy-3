@@ -1,5 +1,7 @@
 .program {
   position: relative;
+
+  padding: 30px 33px 18px 20px;
   background-color: $bg-color-secondary;
 
   &::before {
@@ -24,12 +26,65 @@
     mask-repeat: no-repeat;
   }
 
+  @media (min-width: $width-tablet) {
+    padding: 77px 316px 53px 52px;
+
+    &::before {
+      top: 92px;
+      left: auto;
+      right: 63px;
+      width: 200px;
+      height: 200px;
+    }
+
+    &::after {
+      width: 268px;
+      height: 211px;
+    }
+  }
+
+  @media (min-width: $width-desktop) {
+    padding: 77px 52px 55px;
+
+    &::before {
+      top: 47px;
+      right: auto;
+      left: 52px;
+      width: 100px;
+      height: 100px;
+    }
+
+    &::after {
+      width: 134px;
+      height: 97px;
+    }
+  }
+
   &--slim {
     &::after {
       top: 21px;
-      left: 27px;
+      left: 10px;
       mask-image: url("../../icons/stack.svg#cat-slim");
       mask-size: 36px 50px;
+      mask-position: center;
+    }
+
+    @media (min-width: $width-tablet) {
+      &::after {
+        top: 81px;
+        left: auto;
+        right: 21px;
+        mask-size: 140px 194px;
+      }
+    }
+
+    @media (min-width: $width-desktop) {
+      &::after {
+        top: 41px;
+        right: auto;
+        left: 33px;
+        mask-size: 70px 97px;
+      }
     }
   }
 
@@ -40,15 +95,60 @@
       mask-image: url("../../icons/stack.svg#cat-pro");
       mask-size: 67px 28px;
     }
+
+    @media (min-width: $width-tablet) {
+      &::after {
+        top: 135px;
+        left: auto;
+        right: 29px;
+        mask-size: 268px 112px;
+      }
+    }
+
+    @media (min-width: $width-desktop) {
+      &::after {
+        top: 67px;
+        right: auto;
+        left: 33px;
+        mask-size: 134px 56px;
+      }
+    }
   }
 }
 
 .program__title {
+  margin: 0 0 29px;
+  padding-left: 70px;
+
   @include title-uppercase(24, 37);
+
+  @media (min-width: $width-tablet) {
+    margin-bottom: 24px;
+    padding-left: 0;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin-bottom: 73px;
+    padding-left: 162px;
+  }
 }
 
 .program__description {
+  margin: 0 0 15px;
+  padding-bottom: 23px;
+
   @include text;
+  border-bottom: 1px solid $border-color-additional;
+
+  @media (min-width: $width-tablet) {
+    border-bottom: none;
+    margin-bottom: 48px;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin-bottom: 23px;
+  }
 }
 
 .program__link {
@@ -59,6 +159,7 @@
   @include link-uppercase(16);
 
   &::after {
+    flex-shrink: 0;
     width: 32px;
     height: 10px;
     content: "";

@@ -1,4 +1,10 @@
 .promotion {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  align-items: center;
+  padding: 58px 60px 43px;
+
   @include text(16,20);
   color: $text-color-contrast;
   text-align: center;
@@ -18,5 +24,37 @@
     mask-repeat: no-repeat;
     mask-size: contain;
     mask-position: center;
+  }
+
+  @media (min-width: $width-tablet) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 57px 125px 60px 77px;
+    background-position: center, left 50% bottom 40%;
+
+    &::before {
+      width: 80px;
+      height: 83px;
+    }
+  }
+
+  @media (min-width: $width-desktop) {
+    flex-direction: column;
+    gap: 46px;
+    padding: 56px 43px 42px;
+  }
+}
+
+.promotion__text {
+  margin: 0;
+
+  @media (min-width: $width-tablet) {
+    max-width: 170px;
+    text-align: left;
+  }
+
+  @media (min-width: $width-desktop) {
+    max-width: none;
+    text-align: center;
   }
 }

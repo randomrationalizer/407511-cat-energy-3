@@ -1,5 +1,29 @@
 .main-header {
+  padding-top: 13px;
+
   font-family: $font-secondary;
   text-align: center;
   background-color: $bg-color-basic;
+
+  @media (min-width: $width-tablet) {
+    padding: 25px $page-padding-tablet;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding: 55px 0 29px;
+    background-color: transparent;
+  }
+
+  &--index {
+    @media (min-width: $width-desktop) {
+      color: $text-color-contrast;
+    }
+  }
+}
+
+.main-header__navigation {
+  @media (min-width: $width-desktop) {
+    margin: 0 auto;
+    max-width: $width-content;
+  }
 }
