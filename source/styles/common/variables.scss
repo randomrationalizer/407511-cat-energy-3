@@ -14,13 +14,16 @@ $page-padding-desktop: 40px;
 $width-mobile: 320px;
 $width-tablet: 768px;
 $width-desktop: 1300px;
+$width-mobile-only: 767px;
 $width-content: calc($width-desktop - 2 * $page-padding-desktop);
 $bg-breakpoint: 1600px;
 
 $bg-color-basic: #ffffff;
 $bg-color-secondary: #f2f2f2;
+$bg-color-special: #ebebeb;
 $bg-color-additional: #eaeaea;
 $bg-color-contrast: #68b738;
+$bg-color-contrast-special: #5eaa2f;
 $bg-color-accent: #000000;
 $bg-layout: rgba($bg-color-contrast, 0.85);
 $bg-gradient-1: #444247;
@@ -34,8 +37,11 @@ $text-color-additional: #111111;
 $text-color-special: #222222;
 
 $button-primary: $bg-color-contrast;
+$button-primary-hover: $bg-color-contrast-special;
 $button-primary-text: $text-color-contrast;
+$button-primary-text-hover: rgba($button-primary-text, 0.3);
 $button-secondary: $bg-color-secondary;
+$button-secondary-hover: $bg-color-special;
 $button-secondary-text: $text-color-secondary;
 
 $input-bg-color: $bg-color-basic;
@@ -44,12 +50,19 @@ $input-placeholder-color: $text-color-secondary;
 
 $icon-color: $text-color-basic;
 $icon-color-hover: $bg-color-contrast;
+$icon-color-active: rgba($bg-color-contrast, 0.3);
 $icon-color-accent: $bg-color-contrast;
 $icon-color-contrast: $text-color-contrast;
 $icon-color-additional: #666666;
 $icon-color-special: #d3d3d3;
 
+$logo-color-secondary: $text-color-additional;
+$logo-color-hover: #3e3e3e;
+$logo-color-active: #6b6b6b;
+
 $border-color: #e6e6e6;
 $border-color-secondary: #ebebeb;
 $border-color-additional: #d9d9d9;
 $border-color-special: #cdcdcd;
+$border-color-hover: #444444;
+$border-color-error: #ff8282;

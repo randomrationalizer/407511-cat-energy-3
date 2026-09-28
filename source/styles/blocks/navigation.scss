@@ -5,6 +5,33 @@
     justify-content: space-between;
     gap: 33px;
     align-items: center;
+    position: relative;
+  }
+
+  @media (max-width: $width-mobile-only) {
+    &--closed .navigation__list {
+      display: none;
+    }
+
+    &--opened .navigation__list {
+      position: absolute;
+      z-index: 5;
+      left: 0;
+      right: 0;
+      display: block;
+      background-color: $bg-color-basic;
+    }
+
+    &--no-js {
+      .navigation__list {
+        position: static;
+        display: block;
+      }
+
+      .navigation__toggle {
+        display: none;
+      }
+    }
   }
 }
 
@@ -32,8 +59,8 @@
 
 .navigation__toggle {
   display: block;
-  width: 18px;
-  height: 18px;
+  width: 24px;
+  height: 24px;
   justify-self: end;
 
   @media (min-width: $width-tablet) {

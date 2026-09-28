@@ -41,14 +41,28 @@
 }
 
 .contacts__title {
+  margin: 0;
+
   @include title-uppercase(16, 20);
   color: $text-color-additional;
+
+  @media (min-width: $width-tablet) {
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
 .contacts__text {
+  margin: 0;
+
   @include text(14,20);
 
   @media (min-width: $width-tablet) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 16px;
+    line-height: 20px;
     text-align: right;
   }
 }

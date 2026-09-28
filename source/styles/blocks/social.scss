@@ -16,6 +16,7 @@
   width: 28px;
   height: 22px;
   color: $icon-color-additional;
+  transition: color 0.2s ease;
 
   &::before {
     display: block;
@@ -26,6 +27,15 @@
     mask-repeat: no-repeat;
     mask-size: contain;
     mask-position: center;
+  }
+
+  &:hover,
+  &:focus-visible {
+    color: $icon-color-hover;
+  }
+
+  &:active {
+    color: $icon-color-active;
   }
 
   &--vk {

@@ -1,7 +1,6 @@
 .program {
   position: relative;
-
-  padding: 30px 33px 18px 20px;
+  padding: 30px 20px 18px;
   background-color: $bg-color-secondary;
 
   &::before {
@@ -59,59 +58,59 @@
       height: 97px;
     }
   }
+}
 
-  &--slim {
+.program--slim {
+  &::after {
+    top: 21px;
+    left: 10px;
+    mask-image: url("../../icons/stack.svg#cat-slim");
+    mask-size: 36px 50px;
+    mask-position: center;
+  }
+
+  @media (min-width: $width-tablet) {
     &::after {
-      top: 21px;
-      left: 10px;
-      mask-image: url("../../icons/stack.svg#cat-slim");
-      mask-size: 36px 50px;
-      mask-position: center;
-    }
-
-    @media (min-width: $width-tablet) {
-      &::after {
-        top: 81px;
-        left: auto;
-        right: 21px;
-        mask-size: 140px 194px;
-      }
-    }
-
-    @media (min-width: $width-desktop) {
-      &::after {
-        top: 41px;
-        right: auto;
-        left: 33px;
-        mask-size: 70px 97px;
-      }
+      top: 81px;
+      left: auto;
+      right: 21px;
+      mask-size: 140px 194px;
     }
   }
 
-  &--pro {
+  @media (min-width: $width-desktop) {
     &::after {
-      top: 35px;
-      left: 12px;
-      mask-image: url("../../icons/stack.svg#cat-pro");
-      mask-size: 67px 28px;
+      top: 41px;
+      right: auto;
+      left: 33px;
+      mask-size: 70px 97px;
     }
+  }
+}
 
-    @media (min-width: $width-tablet) {
-      &::after {
-        top: 135px;
-        left: auto;
-        right: 29px;
-        mask-size: 268px 112px;
-      }
+.program--pro {
+  &::after {
+    top: 35px;
+    left: 12px;
+    mask-image: url("../../icons/stack.svg#cat-pro");
+    mask-size: 67px 28px;
+  }
+
+  @media (min-width: $width-tablet) {
+    &::after {
+      top: 135px;
+      left: auto;
+      right: 29px;
+      mask-size: 268px 112px;
     }
+  }
 
-    @media (min-width: $width-desktop) {
-      &::after {
-        top: 67px;
-        right: auto;
-        left: 33px;
-        mask-size: 134px 56px;
-      }
+  @media (min-width: $width-desktop) {
+    &::after {
+      top: 67px;
+      right: auto;
+      left: 33px;
+      mask-size: 134px 56px;
     }
   }
 }
@@ -125,6 +124,8 @@
   @media (min-width: $width-tablet) {
     margin-bottom: 24px;
     padding-left: 0;
+    font-size: 36px;
+    line-height: 36px;
   }
 
   @media (min-width: $width-desktop) {
@@ -144,6 +145,8 @@
     border-bottom: none;
     margin-bottom: 48px;
     padding-bottom: 0;
+    font-size: 16px;
+    line-height: 24px;
   }
 
   @media (min-width: $width-desktop) {
@@ -155,6 +158,8 @@
   display: flex;
   align-items: center;
   gap: 15px;
+  padding: 4px 0;
+  transition: opacity 0.2s ease;
 
   @include link-uppercase(16);
 
@@ -170,9 +175,19 @@
     mask-position: -8px center;
   }
 
-  &:hover {
+  &:hover,
+  &:focus-visible {
     &::after {
       mask-position: 0 center;
     }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $width-tablet) {
+    font-size: 20px;
+    line-height: 20px;
   }
 }

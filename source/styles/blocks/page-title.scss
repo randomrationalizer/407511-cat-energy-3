@@ -1,3 +1,8 @@
 .page-title {
   @include title(36);
+
+  @media (min-width: $width-tablet) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }

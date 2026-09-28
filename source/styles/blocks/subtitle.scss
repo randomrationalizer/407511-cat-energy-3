@@ -28,6 +28,8 @@
 
   @media (min-width: $width-tablet) {
     grid-template-columns: 1fr calc(100% - 2 * $page-padding-tablet) 1fr;
+    font-size: 32px;
+    line-height: 32px;
 
     &::before {
       margin-right: 0;
@@ -36,6 +38,8 @@
 
   @media (min-width: $width-desktop) {
     grid-template-columns: 1fr $width-content 1fr;
+    font-size: 40px;
+    line-height: 40px;
 
     &::before {
       margin-right: 40px;
