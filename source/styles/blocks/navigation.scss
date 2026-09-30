@@ -1,14 +1,5 @@
 .navigation {
-  @media (min-width: $width-tablet) {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 33px;
-    align-items: center;
-    position: relative;
-  }
-
-  @media (max-width: $width-mobile-only) {
+  @media (width < $width-tablet) {
     &--closed .navigation__list {
       display: none;
     }
@@ -32,6 +23,15 @@
         display: none;
       }
     }
+  }
+
+  @media (min-width: $width-tablet) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 33px;
+    align-items: center;
+    position: relative;
   }
 }
 

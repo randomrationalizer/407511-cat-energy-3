@@ -14,44 +14,38 @@
   &::before,
   &::after {
     position: absolute;
-    display: block;
+    left: 0;
     content: "";
+    display: block;
     height: 2px;
-    width: 24px;
+    width: 100%;
     background-color: $icon-color;
   }
-}
 
-// Кнопна открытия меню
-.menu-toggle--open {
   &::before {
     top: 2px;
-    left: 0;
     box-shadow: 0 8px 0 0 $icon-color;
-    transition: box-shadow 0.1s ease, top 0.1s ease, transform 0.3s ease;
+    transition: box-shadow 0.2s ease 0.1s, top 0.2s ease 0.1s, transform 0.2s ease;
   }
 
   &::after {
     bottom: 4px;
-    left: 0;
-    transition: bottom 0.1s ease, transform 0.3s ease;
+    transition: bottom 0.2s ease 0.1s, transform 0.2s ease;
   }
 }
 
-// Кнопна закрытия меню
-.menu-toggle--close {
+// Кнопна-бургер активна (меню открыто, отображается крест)
+.menu-toggle--active {
   &::before {
     top: 10px;
-    left: 0;
     box-shadow: 0 0 0 0 transparent;
-    transform: rotate(46.64deg) skewX(3deg);
-    transition: box-shadow 0.1s ease, top 0.1s ease, transform 0.3s ease;
+    transform: rotate(46.64deg);
+    transition: box-shadow 0.1s ease, top 0.2s ease, transform 0.2s ease 0.1s;
   }
 
   &::after {
     bottom: 12px;
-    left: 0;
-    transform: rotate(-46.64deg)  skewX(-3deg);
-    transition: bottom 0.1s ease, transform 0.3s ease;
+    transform: rotate(-46.64deg);
+    transition: bottom 0.2s ease, transform 0.2s ease 0.1s;
   }
 }

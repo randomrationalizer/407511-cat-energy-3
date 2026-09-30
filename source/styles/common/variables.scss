@@ -14,7 +14,7 @@ $page-padding-desktop: 40px;
 $width-mobile: 320px;
 $width-tablet: 768px;
 $width-desktop: 1300px;
-$width-mobile-only: 767px;
+$width-mobile-only: calc($width-tablet - 1px);
 $width-content: calc($width-desktop - 2 * $page-padding-desktop);
 $bg-breakpoint: 1600px;
 
