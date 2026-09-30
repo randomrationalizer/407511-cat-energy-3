@@ -12,7 +12,6 @@
     row-gap: 13px;
     padding: 10px 38px 40px;
     border: none;
-    background-color: $bg-color-secondary;
     background-image: linear-gradient($bg-color-basic 81px, $bg-color-secondary 81px);
   }
 
@@ -25,6 +24,16 @@
   grid-column: 1;
   grid-row: 1 / span 2;
   justify-self: center;
+  transition: opacity 0.3s ease;
+
+  &:hover,
+  &:focus-visible {
+    filter: brightness(1.05);
+  }
+
+  &:active {
+    filter: brightness(1);
+  }
 
   @media (min-width: $width-tablet) {
     grid-row: 1;
@@ -58,6 +67,17 @@
   margin: 0;
   padding-right: 45px;
   text-decoration: none;
+  transition: opacity 0.2s ease;
+
+  &:hover,
+  &:focus-visible {
+    opacity: 0.6;
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $width-tablet) {
     grid-column: 1;
