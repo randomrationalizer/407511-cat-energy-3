@@ -1,9 +1,9 @@
 .contacts {
   display: grid;
-  grid-template-rows: auto 362px;
+  grid-template-rows: auto auto;
 
   @media (min-width: $width-tablet) {
-    grid-template-rows: auto 400px;
+    grid-template-rows: auto auto;
   }
 
   @media (min-width: $width-desktop) {
@@ -24,7 +24,7 @@
   }
 
   @media (min-width: $width-desktop) {
-    z-index: 2;
+    z-index: 3;
     grid-row: 2;
     grid-column: 1;
     align-self: center;
@@ -68,15 +68,8 @@
 }
 
 .contacts__map {
-  height: 362px;
-
-  @media (min-width: $width-tablet) {
-    min-height: 400px;
-  }
-
   @media (min-width: $width-desktop) {
     grid-row: 1 / -1;
     grid-column: 1 / -1;
-    height: 100%;
   }
 }
