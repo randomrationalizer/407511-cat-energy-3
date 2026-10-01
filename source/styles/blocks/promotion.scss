@@ -9,7 +9,7 @@
   color: $text-color-contrast;
   text-align: center;
   background-color: $bg-color-contrast;
-  background-image: linear-gradient($bg-layout 50%, $bg-layout 50%), url("../../images/background/promo-background@1x.jpg");
+  background-image: linear-gradient($bg-layout 50%, $bg-layout 50%), url("../../images/background/promo-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -30,7 +30,7 @@
     flex-direction: row;
     justify-content: space-between;
     padding: 57px 125px 60px 77px;
-    background-position: center, left 50% bottom 40%;
+    background-image: linear-gradient($bg-layout 50%, $bg-layout 50%), url("../../images/background/promo-background-tablet@1x.jpg");
 
     &::before {
       width: 80px;
@@ -42,6 +42,7 @@
     flex-direction: column;
     gap: 46px;
     padding: 56px 43px 42px;
+    background-image: linear-gradient($bg-layout 50%, $bg-layout 50%), url("../../images/background/promo-background-desktop@1x.jpg");
   }
 }
 

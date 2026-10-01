@@ -44,10 +44,6 @@ $button-secondary: $bg-color-secondary;
 $button-secondary-hover: $bg-color-special;
 $button-secondary-text: $text-color-secondary;
 
-$input-bg-color: $bg-color-basic;
-$input-text-color: $text-color-secondary;
-$input-placeholder-color: $text-color-secondary;
-
 $icon-color: $text-color-basic;
 $icon-color-hover: $bg-color-contrast;
 $icon-color-active: rgba($bg-color-contrast, 0.3);
@@ -67,3 +63,10 @@ $border-color-additional: #d9d9d9;
 $border-color-special: #cdcdcd;
 $border-color-hover: #444444;
 $border-color-error: #ff8282;
+
+$input-bg-color: $bg-color-basic;
+$input-text-color: $text-color-secondary;
+$input-placeholder-color: $text-color-secondary;
+$input-border: #e7e7e7;
+$input-border-hover: $border-color-special;
+$input-border-active: $border-color-hover;

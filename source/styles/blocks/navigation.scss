@@ -37,7 +37,7 @@
 
 .navigation__wrapper {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 1fr auto 1fr;
   align-items: center;
   padding: 0 $page-padding-mobile 15px;
   border-bottom: 1px solid $border-color;

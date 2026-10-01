@@ -63,6 +63,14 @@
 
 .product__unit {
   justify-self: start;
+
+  @media (min-width: $width-tablet) {
+    justify-self: end;
+  }
+
+  @media (min-width: $width-desktop) {
+    justify-self: start;
+  }
 }
 
 .product__price {

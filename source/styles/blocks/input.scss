@@ -2,15 +2,18 @@
   padding: 13px;
 
   @include input(20);
-  border: 1px solid $border-color-special;
+  border: 1px solid $input-border;
 
   &::placeholder {
     color: $input-placeholder-color;
   }
 
-  &:not(:disabled):hover,
+  &:not(:disabled):hover {
+    border: 1px solid $input-border-hover;
+  }
+
   &:focus-visible {
-    outline: 2px solid $border-color-hover;
+    outline: 2px solid $input-border-active;
     outline-offset: -2px;
   }
 
