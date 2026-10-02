@@ -11,14 +11,6 @@ img {
   object-fit: contain;
 }
 
-body {
-  margin: 0;
-  font-family: $font-primary;
-  font-size: $font-size-basic;
-  line-height: $line-height-basic;
-  color: $text-color-basic;
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;

@@ -1,4 +1,51 @@
+.subscribe {
+  padding: 40px 0;
+
+  @media (min-width: $width-tablet) {
+    padding: 80px 0;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding: 96px 0 104px;
+  }
+}
+
+.subscribe__title {
+  margin: 0 0 32px;
+
+  @media (min-width: $width-tablet) {
+    margin-bottom: 66px;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin-bottom: 72px;
+  }
+}
+
 .subscribe__slogan {
+  margin: 0 auto 24px;
+
   @include title(16,24);
   text-align: center;
+
+  @media (min-width: $width-tablet) {
+    max-width: 632px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  @media (min-width: $width-desktop) {
+    max-width: 752px;
+  }
+}
+
+.subscribe__form {
+  @media (min-width: $width-tablet) {
+    margin: 0 auto;
+    width: 632px;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 752px;
+  }
 }

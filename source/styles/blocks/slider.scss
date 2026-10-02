@@ -1,3 +1,110 @@
-.slider {
-  //стили
+.slider__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 4px 1fr;
+  grid-template-rows: auto;
+}
+
+.slider__before {
+  grid-column: 1 / -1;
+  grid-row: 1;
+  clip-path: inset(0 50% 0 0);
+  z-index: 1;
+}
+
+.slider__after {
+  grid-column: 1 / -1;
+  grid-row: 1;
+  clip-path: inset(0 0 0 50%);
+  z-index: 2;
+}
+
+.slider__picture {
+  display: block;
+  width: 280px;
+  height: 256px;
+
+  @media (min-width: $width-tablet) {
+    width: 560px;
+    height: 512px;
+  }
+}
+
+.slider__control {
+  position: relative;
+  z-index: 3;
+  display: block;
+  grid-column: 2;
+  grid-row: 1;
+  width: 4px;
+  height: 100%;
+  padding: 0;
+  background-color: $icon-color-additional;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+
+  &:hover,
+  &:focus-visible {
+    background-color: $icon-color-hover;
+
+    .slider__toggler {
+      border-color: $icon-color-hover;
+
+      &::before,
+      &::after {
+        border-color: transparent $icon-color-hover;
+      }
+    }
+  }
+
+  &:active {
+    background-color: $icon-color-active-special;
+
+    .slider__toggler {
+      border-color: $icon-color-active-special;
+
+      &::before,
+      &::after {
+        border-color: transparent $icon-color-active-special;
+      }
+    }
+  }
+}
+
+.slider__toggler {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 4;
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: $bg-color-basic;
+  border: 2px solid $icon-color-additional;
+  border-radius: 50%;
+  transform: translateY(-50%) translateX(-50%);
+
+  &::before,
+  &::after {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 9px 8px;
+    border-color: transparent $icon-color-additional;
+    transform: translateY(-50%);
+  }
+
+  &::before {
+    left: 8px;
+    border-left-width: 0;
+  }
+
+  &::after {
+    right: 8px;
+    border-right-width: 0;
+  }
 }

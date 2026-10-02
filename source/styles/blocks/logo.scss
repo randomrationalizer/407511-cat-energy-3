@@ -1,3 +1,19 @@
 .logo {
+  display: block;
   text-decoration: none;
+
+  transition: opacity 0.2s ease;
+
+  &:hover,
+  &:focus-visible {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.logo__image {
+  display: block;
 }

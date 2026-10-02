@@ -1,9 +1,15 @@
 .promotion {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  align-items: center;
+  padding: 58px 60px 43px;
+
   @include text(16,20);
   color: $text-color-contrast;
   text-align: center;
   background-color: $bg-color-contrast;
-  background-image: linear-gradient($bg-layout 50%, $bg-layout 50%), url("../../images/background/promo-background@1x.jpg");
+  background-image: linear-gradient($bg-layout 50%, $bg-layout 50%), url("../../images/background/promo-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -18,5 +24,38 @@
     mask-repeat: no-repeat;
     mask-size: contain;
     mask-position: center;
+  }
+
+  @media (min-width: $width-tablet) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 57px 125px 60px 77px;
+    background-image: linear-gradient($bg-layout 50%, $bg-layout 50%), url("../../images/background/promo-background-tablet@1x.jpg");
+
+    &::before {
+      width: 80px;
+      height: 83px;
+    }
+  }
+
+  @media (min-width: $width-desktop) {
+    flex-direction: column;
+    gap: 46px;
+    padding: 56px 43px 42px;
+    background-image: linear-gradient($bg-layout 50%, $bg-layout 50%), url("../../images/background/promo-background-desktop@1x.jpg");
+  }
+}
+
+.promotion__text {
+  margin: 0;
+
+  @media (min-width: $width-tablet) {
+    max-width: 170px;
+    text-align: left;
+  }
+
+  @media (min-width: $width-desktop) {
+    max-width: none;
+    text-align: center;
   }
 }

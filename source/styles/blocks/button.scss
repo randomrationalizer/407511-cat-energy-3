@@ -1,18 +1,60 @@
 .button {
+  display: block;
+  padding: 10px 15px;
+
   @include link-uppercase(16, 20);
   text-align: center;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+
+  &:disabled,
+  &:disabled:hover,
+  &:disabled:focus-visible,
+  &:disabled:active {
+    color: $text-color-contrast;
+    background-color: $bg-color-secondary;
+    cursor: auto;
+  }
 
   &--primary {
     color: $button-primary-text;
     background-color: $button-primary;
+
+    &:hover,
+    &:focus-visible {
+      background-color: $button-primary-hover;
+    }
+
+    &:active {
+      color: $button-primary-text-hover;
+    }
   }
 
   &--secondary {
     color: $button-secondary-text;
     background-color: $button-secondary;
+
+    &:hover,
+    &:focus-visible {
+      background-color: $button-secondary-hover;
+    }
+
+    &:active {
+      background-color: $button-secondary-hover;
+    }
+  }
+
+  &--size-l {
+    @media (min-width: $width-tablet) {
+      font-size: 20px;
+      line-height: 26px;
+      padding: 14px 26px;
+    }
   }
 
   &--size-xl {
+    padding: 15px;
     font-size: 20px;
     line-height: 26px;
   }

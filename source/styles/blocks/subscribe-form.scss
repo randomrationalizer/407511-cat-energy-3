@@ -1,0 +1,23 @@
+.subscribe-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  @media (min-width: $width-tablet) {
+    flex-direction: row;
+    gap: 0;
+  }
+
+  .subscribe-form__field {
+    @media (min-width: $width-tablet) {
+      flex-grow: 1;
+      min-width: 50%;
+    }
+  }
+}
+
+.subscribe-form__button {
+  @media (min-width: $width-tablet) {
+    min-width: 256px;
+  }
+}
