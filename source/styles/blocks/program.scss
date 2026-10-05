@@ -173,6 +173,7 @@
     mask-repeat: no-repeat;
     mask-size: 24px 10px;
     mask-position: -8px center;
+    transition: mask-position 0.2s ease-in-out;
   }
 
   &:hover,
