@@ -6,12 +6,17 @@
 
   background-image:
     linear-gradient($bg-layout 60%, $bg-color-basic 60%),
-    url("../../images/background/index-background@1x.jpg"),
+    image-set(
+      url("../../images/background/index-background-mobile@1x.webp") type("image/webp") 1x,
+      url("../../images/background/index-background-mobile@2x.webp") type("image/webp") 2x,
+      url("../../images/background/index-background-mobile@1x.jpg") type("image/jpeg") 1x,
+      url("../../images/background/index-background-mobile@2x.jpg") type("image/jpeg") 2x
+    ),
     linear-gradient($bg-gradient-1 25%, $bg-gradient-2 50%, $bg-gradient-3 75%),
     linear-gradient($bg-color-contrast 60%, $bg-color-basic 60%);
   background-repeat: no-repeat;
-  background-position: 50%, 63% -40px, 50%, 50%;
-  background-size: cover, auto 380px, cover, cover;
+  background-position: 50%, 63% 0, 50%, 50%;
+  background-size: cover, auto, cover, cover;
 
   @media (min-width: $width-tablet) {
     padding: 65px 0 0;
