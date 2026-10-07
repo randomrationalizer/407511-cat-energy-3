@@ -13,30 +13,6 @@
   }
 }
 
-.logo-text--dark {
-  &:hover,
-  &:focus-visible {
-    opacity: 1;
-
-    .logo-text__fill {
-      fill: $logo-color-hover;
-    }
-  }
-
-  &:active {
-    opacity: 1;
-
-    .logo-text__fill {
-      fill: $logo-color-active;
-    }
-  }
-}
-
 .logo-text__image {
   display: block;
-}
-
-.logo-text__fill {
-  fill: $logo-color-secondary;
-  transition: fill 0.2s ease;
 }
