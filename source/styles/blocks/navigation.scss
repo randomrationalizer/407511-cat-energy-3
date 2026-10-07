@@ -1,6 +1,6 @@
 .navigation {
   @media (width < $width-tablet) {
-    &--closed .navigation__list {
+    .navigation__list {
       display: none;
     }
 
