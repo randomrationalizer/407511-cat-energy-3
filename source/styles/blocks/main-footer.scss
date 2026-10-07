@@ -32,6 +32,7 @@
 
   @media (min-width: $width-tablet) {
     border: none;
+    max-width: 270px;
   }
 
   @media (min-width: $width-desktop) {
@@ -47,5 +48,11 @@
 }
 
 .main-footer__copyright {
-  flex-shrink: 0;
+  @media (min-width: $width-tablet) {
+    max-width: 270px;
+  }
+
+  @media (min-width: $width-desktop) {
+    max-width: 350px;
+  }
 }

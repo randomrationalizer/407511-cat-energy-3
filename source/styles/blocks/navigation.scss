@@ -1,6 +1,6 @@
 .navigation {
   @media (width < $width-tablet) {
-    &--closed .navigation__list {
+    .navigation__list {
       display: none;
     }
 
@@ -46,6 +46,7 @@
     grid-template-columns: auto auto;
     gap: 13px;
     align-self: start;
+    flex-shrink: 0;
     margin-right: auto;
     padding: 0;
     border-bottom: none;

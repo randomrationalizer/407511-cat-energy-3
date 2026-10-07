@@ -1,17 +1,15 @@
 const menu = document.querySelector('.navigation');
 const toggle = document.querySelector('.navigation__toggle');
+const toggleText = toggle.querySelector('span');
 
 menu.classList.remove('navigation--no-js');
 
 toggle.onclick = () => {
+  toggle.classList.toggle('menu-toggle--active');
   if (toggle.classList.contains('menu-toggle--active')) {
-    toggle.classList.remove('menu-toggle--active');
-    menu.classList.remove('navigation--opened');
-    menu.classList.add('navigation--closed');
-
+    toggleText.textContent = 'Закрыть меню';
   } else {
-    toggle.classList.add('menu-toggle--active');
-    menu.classList.remove('navigation--closed');
-    menu.classList.add('navigation--opened');
+    toggleText.textContent = 'Открыть меню';
   }
+  menu.classList.toggle('navigation--opened');
 };
