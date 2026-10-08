@@ -63,7 +63,7 @@
 .program--slim {
   &::after {
     top: 21px;
-    left: 10px;
+    left: 11px;
     mask-image: url("../../icons/stack.svg#cat-slim");
     mask-size: 36px 50px;
     mask-position: center;
@@ -71,9 +71,9 @@
 
   @media (min-width: $width-tablet) {
     &::after {
-      top: 81px;
+      top: 73px;
       left: auto;
-      right: 21px;
+      right: 29px;
       mask-size: 140px 194px;
     }
   }
@@ -136,14 +136,14 @@
 
 .program__description {
   margin: 0 0 15px;
-  padding-bottom: 23px;
+  padding-bottom: 22px;
 
   @include text;
   border-bottom: 1px solid $border-color-additional;
 
   @media (min-width: $width-tablet) {
     border-bottom: none;
-    margin-bottom: 48px;
+    margin-bottom: 53px;
     padding-bottom: 0;
     font-size: 16px;
     line-height: 24px;
@@ -157,7 +157,7 @@
 .program__link {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 16px;
   padding: 4px 0;
   transition: opacity 0.2s ease;
 
@@ -166,12 +166,12 @@
   &::after {
     flex-shrink: 0;
     width: 32px;
-    height: 10px;
+    height: 12px;
     content: "";
     background-color: currentColor;
     mask-image: url("../../icons/stack.svg#arrow-right");
     mask-repeat: no-repeat;
-    mask-size: 24px 10px;
+    mask-size: 32px 12px;
     mask-position: -8px center;
     transition: mask-position 0.2s ease-in-out;
   }
@@ -188,6 +188,7 @@
   }
 
   @media (min-width: $width-tablet) {
+    gap: 26px;
     font-size: 20px;
     line-height: 20px;
   }

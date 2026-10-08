@@ -3,7 +3,7 @@
   background-color: $bg-color-basic;
 
   @media (min-width: $width-tablet) {
-    padding: 45px 0 47px;
+    padding: 50px 0 47px;
     border-bottom: 1px solid $border-color;
   }
 
@@ -24,7 +24,7 @@
 .advantages__list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 24px;
+  gap: 20px;
   counter-reset: list-item 0;
   margin: 0;
   padding: 0;
@@ -32,7 +32,7 @@
 
   @media (min-width: $width-tablet) {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 37px;
+    gap: 37px 59px;
   }
 
   @media (min-width: $width-desktop) {
@@ -44,6 +44,7 @@
   display: grid;
   grid-template-columns: 60px auto;
   gap: 20px;
+  align-items: center;
   counter-increment: list-item 1;
 
   @include text;
@@ -68,7 +69,7 @@
     justify-self: start;
     max-width: 250px;
     min-height: $font-size-counter;
-    padding: 40px 0 13px;
+    padding: 40px 0 57px;
     font-size: 16px;
     line-height: 24px;
 
@@ -85,7 +86,7 @@
       top: 0;
       right: 0;
       height: 100%;
-      width: auto;
+      width: 136px;
       content: counter(list-item);
       font-family: $font-secondary;
       font-size: $font-size-counter;
@@ -101,24 +102,28 @@
   &--natural {
     &::before {
       background-image: url("../../icons/stack.svg#icon-natural");
+      background-size: 25px 28px;
     }
   }
 
   &--cooking {
     &::before {
       background-image: url("../../icons/stack.svg#icon-cooking");
+      background-size: 26px 29px;
     }
   }
 
   &--meal {
     &::before {
       background-image: url("../../icons/stack.svg#icon-meal");
+      background-size: 25px 30px;
     }
   }
 
   &--time {
     &::before {
       background-image: url("../../icons/stack.svg#icon-time");
+      background-size: 26px 31px;
     }
   }
 }

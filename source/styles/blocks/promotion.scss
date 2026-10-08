@@ -3,7 +3,7 @@
   flex-direction: column;
   gap: 48px;
   align-items: center;
-  padding: 58px 60px 43px;
+  padding: 58px 55px 43px;
 
   @include text(16,20);
   color: $text-color-contrast;
@@ -36,7 +36,7 @@
   @media (min-width: $width-tablet) {
     flex-direction: row;
     justify-content: space-between;
-    padding: 57px 125px 60px 77px;
+    padding: 58px 117px 60px 77px;
     background-image:
       linear-gradient($bg-layout 50%, $bg-layout 50%),
       image-set(

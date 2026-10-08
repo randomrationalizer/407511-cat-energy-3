@@ -3,7 +3,7 @@
   gap: 24px;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 20px 0;
+  padding: 21px 0 19px;
   list-style: none;
 
   @media (min-width: $width-tablet) {
@@ -41,18 +41,21 @@
   &--vk {
     &::before {
       mask-image: url("../../icons/stack.svg#social-vk");
+      mask-size: 27px 17px;
     }
   }
 
   &--youtube {
     &::before {
       mask-image: url("../../icons/stack.svg#social-youtube");
+      mask-size: 24px 19px;
     }
   }
 
   &--tg {
     &::before {
       mask-image: url("../../icons/stack.svg#social-telegram");
+      mask-size: 21px 18px;
     }
   }
 }

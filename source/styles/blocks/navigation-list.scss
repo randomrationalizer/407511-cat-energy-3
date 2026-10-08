@@ -5,7 +5,7 @@
   @media (min-width: $width-tablet) {
     display: flex;
     flex-flow: row wrap;
-    gap: 33px;
+    gap: 26px;
   }
 
   @media (min-width: $width-desktop) {
@@ -46,7 +46,7 @@
   }
 
   @media (min-width: $width-tablet) {
-    padding: 14px 0 12px;
+    padding: 14px 4px 12px;
     font-size: 18px;
     line-height: 24px;
     border-bottom: none;
@@ -61,7 +61,7 @@
   &--current {
     @media (min-width: $width-tablet) {
       text-decoration: underline 2px solid $icon-color-accent;
-      text-underline-offset: 10px;
+      text-underline-offset: 12px;
     }
   }
 }

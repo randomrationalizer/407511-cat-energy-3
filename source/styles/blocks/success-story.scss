@@ -3,7 +3,7 @@
   background-color: $bg-color-additional;
 
   @media (min-width: $width-tablet) {
-    padding: 45px 0 101px;
+    padding: 44px 0 101px;
     background-image: linear-gradient(to top, $bg-color-additional 0, $bg-color-additional 462px, $bg-color-basic 462px);
   }
 
@@ -41,6 +41,8 @@
 
   @media (min-width: $width-tablet) {
     margin-bottom: 55px;
+
+    @include text(16, 24);
   }
 
   @media (min-width: $width-desktop) {
