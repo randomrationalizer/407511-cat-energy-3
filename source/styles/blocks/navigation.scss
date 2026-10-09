@@ -55,6 +55,7 @@
   @media (min-width: $width-desktop) {
     gap: 14px;
     align-self: start;
+    margin-right: 0;
   }
 }
 
@@ -79,9 +80,9 @@
 
 .navigation__logo-text {
   justify-self: center;
-}
+  width: 101px;
+  height: 18px;
 
-.logo-text__image {
   @media (min-width: $width-desktop) {
     width: 118px;
     height: 21px;

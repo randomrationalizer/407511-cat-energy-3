@@ -120,6 +120,7 @@
 
   @media (min-width: $width-desktop) {
     grid-row: 4;
+    min-width: 244px;
     justify-self: start;
     margin-top: 0;
   }

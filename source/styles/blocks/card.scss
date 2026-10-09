@@ -94,7 +94,7 @@
   }
 
   @media (min-width: $width-desktop) {
-    margin-bottom: 3px;
+    margin-bottom: 6px;
     padding: 0 14px;
   }
 }
@@ -129,11 +129,11 @@
 
   @media (min-width: $width-tablet) {
     grid-column: 1;
-    margin-top: 19px;
+    margin-top: 20px;
     grid-row: 4;
   }
 
   @media (min-width: $width-desktop) {
-    margin-top: 20px;
+    margin-top: 22px;
   }
 }

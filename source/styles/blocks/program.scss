@@ -43,7 +43,7 @@
   }
 
   @media (min-width: $width-desktop) {
-    padding: 77px 52px 55px;
+    padding: 77px 52px 60px;
 
     &::before {
       top: 47px;
@@ -82,7 +82,7 @@
     &::after {
       top: 41px;
       right: auto;
-      left: 33px;
+      left: 35px;
       mask-size: 70px 97px;
     }
   }
@@ -150,7 +150,7 @@
   }
 
   @media (min-width: $width-desktop) {
-    margin-bottom: 23px;
+    margin-bottom: 28px;
   }
 }
 

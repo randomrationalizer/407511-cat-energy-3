@@ -9,7 +9,7 @@
 
   @media (min-width: $width-desktop) {
     padding: 0 0 75px;
-    background-image: linear-gradient(to bottom, $bg-color-basic 0, $bg-color-basic 135px, $bg-color-additional 135px);
+    background-image: linear-gradient(to bottom, $bg-color-basic 0, $bg-color-basic 135px, $bg-color-secondary 135px);
   }
 }
 

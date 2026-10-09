@@ -36,7 +36,7 @@
   @media (min-width: $width-tablet) {
     flex-direction: row;
     justify-content: space-between;
-    padding: 58px 117px 60px 77px;
+    padding: 60px 117px 60px 77px;
     background-image:
       linear-gradient($bg-layout 50%, $bg-layout 50%),
       image-set(
@@ -55,7 +55,7 @@
   @media (min-width: $width-desktop) {
     flex-direction: column;
     gap: 46px;
-    padding: 56px 43px 42px;
+    padding: 56px 40px 42px;
     background-image:
       linear-gradient($bg-layout 50%, $bg-layout 50%),
       image-set(
