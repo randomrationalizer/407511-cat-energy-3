@@ -17,23 +17,21 @@
     @media (min-width: $width-desktop) {
       background-image:
         linear-gradient(to right, $bg-color-basic 50%, $bg-layout 50%),
-        url("../../images/background/index-background@1x.jpg"),
+        image-set(
+          url("../../images/background/index-background-desktop@1x.webp") type("image/webp") 1x,
+          url("../../images/background/index-background-desktop@2x.webp") type("image/webp") 2x,
+          url("../../images/background/index-background-desktop@1x.jpg") type("image/jpeg") 1x,
+          url("../../images/background/index-background-desktop@2x.jpg") type("image/jpeg") 2x
+        ),
         linear-gradient($bg-gradient-1 25%, $bg-gradient-2 50%, $bg-gradient-3 75%),
         linear-gradient(to right, $bg-color-basic 50%, $bg-color-contrast 50%);
       background-repeat: no-repeat;
-      background-position: top 0 right 0, top 0 right -300px, top 0 right 0, top 0 right 0;
+      background-position: top 0 right 0, top 0 right -321px, top 0 right 0, top 0 right 0;
       background-size: auto 695px, auto 694px, auto 694px, auto 695px;
     }
 
     @media (min-width: $bg-breakpoint) {
-      background-image:
-        linear-gradient(to right, $bg-color-basic 50%, $bg-layout 50%),
-        url("../../images/background/index-background@1x.jpg"),
-        linear-gradient($bg-gradient-1 25%, $bg-gradient-2 50%, $bg-gradient-3 75%),
-        linear-gradient(to right, $bg-color-basic 50%, $bg-color-contrast 50%);
-      background-repeat: no-repeat;
       background-position: top 0 right 0, top 0 right 0, top 0 right 0, top 0 right 0;
-      background-size: auto 695px, auto 694px, auto 694px, auto 695px;
     }
   }
 }

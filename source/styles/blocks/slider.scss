@@ -1,6 +1,7 @@
 .slider__wrapper {
+  position: relative;
   display: grid;
-  grid-template-columns: 1fr 4px 1fr;
+  grid-template-columns: 1fr;
   grid-template-rows: auto;
 }
 
@@ -8,46 +9,34 @@
   grid-column: 1 / -1;
   grid-row: 1;
   clip-path: inset(0 50% 0 0);
-  z-index: 1;
 }
 
 .slider__after {
   grid-column: 1 / -1;
   grid-row: 1;
   clip-path: inset(0 0 0 50%);
-  z-index: 2;
 }
 
-.slider__picture {
+.slider__image {
   display: block;
-  width: 280px;
-  height: 256px;
-
-  @media (min-width: $width-tablet) {
-    width: 560px;
-    height: 512px;
-  }
 }
 
-.slider__control {
-  position: relative;
-  z-index: 3;
-  display: block;
-  grid-column: 2;
+.slider__range {
+  grid-column: 1 / -1;
   grid-row: 1;
-  width: 4px;
-  height: 100%;
-  padding: 0;
-  background-color: $icon-color-additional;
-  border: none;
-  border-radius: 2px;
+  z-index: 2;
+  margin: 0;
+  background: transparent;
+  opacity: 0;
   cursor: pointer;
 
   &:hover,
   &:focus-visible {
-    background-color: $icon-color-hover;
+    & + .slider__divider {
+      background-color: $icon-color-hover;
+    }
 
-    .slider__toggler {
+    & + .slider__divider > .slider__toggler {
       border-color: $icon-color-hover;
 
       &::before,
@@ -58,9 +47,11 @@
   }
 
   &:active {
-    background-color: $icon-color-active-special;
+    & + .slider__divider {
+      background-color: $icon-color-active-special;
+    }
 
-    .slider__toggler {
+    & + .slider__divider > .slider__toggler {
       border-color: $icon-color-active-special;
 
       &::before,
@@ -71,11 +62,27 @@
   }
 }
 
+.slider__divider {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  z-index: 1;
+  grid-column: 1 / -1;
+  grid-row: 1;
+  width: 4px;
+  padding: 0;
+  background-color: $icon-color-additional;
+  border: none;
+  border-radius: 2px;
+  transform: translateX(-50%);
+}
+
 .slider__toggler {
   position: absolute;
   top: 50%;
   left: 50%;
-  z-index: 4;
+  z-index: 2;
   display: block;
   width: 40px;
   height: 40px;
@@ -99,12 +106,12 @@
   }
 
   &::before {
-    left: 8px;
+    left: 6px;
     border-left-width: 0;
   }
 
   &::after {
-    right: 8px;
+    right: 6px;
     border-right-width: 0;
   }
 }

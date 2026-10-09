@@ -5,7 +5,7 @@
   background-color: $bg-color-secondary;
 
   @media (min-width: $width-tablet) {
-    padding: 55px 0;
+    padding: 57px 0;
   }
 
   @media (min-width: $width-desktop) {
@@ -16,7 +16,7 @@
 .main-footer__container {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 19px;
 
   @media (min-width: $width-tablet) {
     flex-flow: row wrap;
@@ -32,6 +32,7 @@
 
   @media (min-width: $width-tablet) {
     border: none;
+    max-width: 270px;
   }
 
   @media (min-width: $width-desktop) {
@@ -44,8 +45,18 @@
   height: 24px;
   align-self: center;
   flex-shrink: 0;
+
+  @media (min-width: $width-tablet) {
+    margin-right: 38px;
+  }
 }
 
 .main-footer__copyright {
-  flex-shrink: 0;
+  @media (min-width: $width-tablet) {
+    max-width: 270px;
+  }
+
+  @media (min-width: $width-desktop) {
+    max-width: 350px;
+  }
 }

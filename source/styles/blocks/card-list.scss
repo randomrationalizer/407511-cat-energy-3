@@ -7,12 +7,12 @@
   @media (min-width: $width-tablet) {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 60px;
+    gap: 60px 60px;
   }
 
   @media (min-width: $width-desktop) {
     grid-template-columns: repeat(auto-fit, 245px);
-    gap: 63px 80px;
+    gap: 64px 80px;
   }
 }
 

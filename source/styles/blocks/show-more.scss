@@ -45,7 +45,8 @@
   color: $text-color-additional;
 
   @media (min-width: $width-tablet) {
-    margin: 110px 0 23px;
+    max-width: 170px;
+    margin: 110px auto 23px;
     font-size: 20px;
     line-height: 24px;
   }
@@ -61,7 +62,8 @@
   @include text(12,16);
 
   @media (min-width: $width-tablet) {
-    margin-bottom: 82px;
+    max-width: 170px;
+    margin: 0 auto 82px;
     font-size: 16px;
     line-height: 18px;
   }

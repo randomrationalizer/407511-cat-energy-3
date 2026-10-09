@@ -3,13 +3,20 @@
   flex-direction: column;
   gap: 48px;
   align-items: center;
-  padding: 58px 60px 43px;
+  padding: 58px 55px 43px;
 
   @include text(16,20);
   color: $text-color-contrast;
   text-align: center;
   background-color: $bg-color-contrast;
-  background-image: linear-gradient($bg-layout 50%, $bg-layout 50%), url("../../images/background/promo-background-mobile@1x.jpg");
+  background-image:
+    linear-gradient($bg-layout 50%, $bg-layout 50%),
+    image-set(
+      url("../../images/background/promo-background-mobile@1x.webp") type("image/webp") 1x,
+      url("../../images/background/promo-background-mobile@2x.webp") type("image/webp") 2x,
+      url("../../images/background/promo-background-mobile@1x.jpg") type("image/jpeg") 1x,
+      url("../../images/background/promo-background-mobile@2x.jpg") type("image/jpeg") 2x
+    );
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -29,8 +36,15 @@
   @media (min-width: $width-tablet) {
     flex-direction: row;
     justify-content: space-between;
-    padding: 57px 125px 60px 77px;
-    background-image: linear-gradient($bg-layout 50%, $bg-layout 50%), url("../../images/background/promo-background-tablet@1x.jpg");
+    padding: 60px 117px 60px 77px;
+    background-image:
+      linear-gradient($bg-layout 50%, $bg-layout 50%),
+      image-set(
+        url("../../images/background/promo-background-tablet@1x.webp") type("image/webp") 1x,
+        url("../../images/background/promo-background-tablet@2x.webp") type("image/webp") 2x,
+        url("../../images/background/promo-background-tablet@1x.jpg") type("image/jpeg") 1x,
+        url("../../images/background/promo-background-tablet@2x.jpg") type("image/jpeg") 2x
+      );
 
     &::before {
       width: 80px;
@@ -41,8 +55,17 @@
   @media (min-width: $width-desktop) {
     flex-direction: column;
     gap: 46px;
-    padding: 56px 43px 42px;
-    background-image: linear-gradient($bg-layout 50%, $bg-layout 50%), url("../../images/background/promo-background-desktop@1x.jpg");
+    padding: 56px 40px 42px;
+    background-image:
+      linear-gradient($bg-layout 50%, $bg-layout 50%),
+      image-set(
+        url("../../images/background/promo-background-desktop@1x.webp") type("image/webp") 1x,
+        url("../../images/background/promo-background-desktop@2x.webp") type("image/webp") 2x,
+        url("../../images/background/promo-background-desktop@1x.jpg") type("image/jpeg") 1x,
+        url("../../images/background/promo-background-desktop@2x.jpg") type("image/jpeg") 2x
+      );
+    background-size: cover, contain;
+    background-position: center, top;
   }
 }
 
