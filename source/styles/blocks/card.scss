@@ -11,7 +11,7 @@
   }
 
   @media (min-width: $width-tablet) {
-    grid-template-columns: auto;
+    grid-template-columns: 1fr;
     grid-template-rows: auto 1fr auto auto;
     row-gap: 13px;
     padding: 10px 38px 40px;
