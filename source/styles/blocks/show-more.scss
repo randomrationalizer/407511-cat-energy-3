@@ -1,5 +1,8 @@
 .show-more {
   position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
   padding: 25px $page-padding-mobile;
   text-align: center;
   border-bottom: 1px solid $border-color-secondary;
@@ -22,12 +25,12 @@
   }
 
   @media (min-width: $width-tablet) {
-    padding: 50px 37px 40px;
+    padding: 48px 37px 40px;
     border: 2px solid $bg-color-secondary;
 
     &::before,
     &::after {
-      top: 80px;
+      top: 78px;
       width: 60px;
     }
   }

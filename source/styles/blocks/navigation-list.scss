@@ -10,13 +10,20 @@
 
   @media (min-width: $width-desktop) {
     justify-content: flex-end;
-    // gap: 10px 30px;
     gap: 10px 29px;
   }
 
   &--index .navigation-list__link {
     @media (min-width: $width-desktop) {
       text-decoration-color: $icon-color-contrast;
+    }
+  }
+
+  &--index .navigation-list__link--current {
+    @media (min-width: $width-desktop) {
+      &::after {
+        background-color: $icon-color-contrast;
+      }
     }
   }
 }
@@ -60,9 +67,25 @@
   }
 
   &--current {
+    position: relative;
+
     @media (min-width: $width-tablet) {
-      text-decoration: underline 2px solid $icon-color-accent;
-      text-underline-offset: 12px;
+      &::after {
+        position: absolute;
+        content: "";
+        left: 4px;
+        right: 4px;
+        height: 2px;
+        bottom: 3px;
+        background-color: $icon-color-accent;
+      }
+    }
+
+    @media (min-width: $width-desktop) {
+      &::after {
+        left: 2px;
+        right: 2px;
+      }
     }
   }
 }

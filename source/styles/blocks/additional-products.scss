@@ -45,5 +45,6 @@
 .additional-products__promotion {
   @media (min-width: $width-desktop) {
     grid-column: 2;
+    align-self: start;
   }
 }

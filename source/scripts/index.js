@@ -17,22 +17,25 @@ toggle.onclick = () => {
 
 // Слайдер сравнения до/после
 const slider = document.querySelector('.slider');
-const sliderDivider = slider.querySelector('.slider__divider');
-const sliderRange = slider.querySelector('.slider__range');
-const sliderLeftImage = slider.querySelector('.slider__before');
-const sliderRightImage = slider.querySelector('.slider__after');
 
-const setDividerPosition = (value) => {
-  sliderDivider.style.left = `${ value }%`;
-};
+if (slider) {
+  const sliderDivider = slider.querySelector('.slider__divider');
+  const sliderRange = slider.querySelector('.slider__range');
+  const sliderLeftImage = slider.querySelector('.slider__before');
+  const sliderRightImage = slider.querySelector('.slider__after');
 
-const clipImages = (value) => {
-  sliderLeftImage.style.clipPath = `inset(0 ${ 100 - value }% 0 0)`;
-  sliderRightImage.style.clipPath = `inset(0 0 0 ${ value }%)`;
-};
+  const setDividerPosition = (value) => {
+    sliderDivider.style.left = `${ value }%`;
+  };
 
-sliderRange.addEventListener('input', (evt) => {
-  const position = evt.target.value;
-  setDividerPosition(position);
-  clipImages(position);
-});
+  const clipImages = (value) => {
+    sliderLeftImage.style.clipPath = `inset(0 ${ 100 - value }% 0 0)`;
+    sliderRightImage.style.clipPath = `inset(0 0 0 ${ value }%)`;
+  };
+
+  sliderRange.addEventListener('input', (evt) => {
+    const position = evt.target.value;
+    setDividerPosition(position);
+    clipImages(position);
+  });
+}
