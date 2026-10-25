@@ -1,0 +1,30 @@
+.request {
+  padding-bottom: 32px;
+
+  @media (min-width: $width-tablet) {
+    padding-bottom: 60px;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding-bottom: 79px;
+  }
+}
+
+.request__slogan {
+  margin-bottom: 15px;
+
+  @include title-uppercase(14,18);
+
+  @media (min-width: $width-tablet) {
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    margin-bottom: 66px;
+    padding-left: 40px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding-left: 0;
+  }
+}

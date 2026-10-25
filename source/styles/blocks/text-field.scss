@@ -1,0 +1,86 @@
+.text-field {
+  &--with-icon {
+    .text-field__label {
+      position: relative;
+    }
+
+    .text-field__label::after {
+      position: absolute;
+      content: "";
+      right: 12px;
+      width: 20px;
+      height: 20px;
+      background-color: $input-icon-color;
+      mask-repeat: no-repeat;
+      mask-position: center;
+    }
+
+    .text-field__label:focus-within::after {
+      background-color: $icon-color-hover;
+    }
+
+    .text-field__input {
+      padding-right: 40px;
+    }
+
+    @media (min-width: $width-tablet) {
+      .text-field__label::after {
+        right: 14px;
+      }
+    }
+
+    @media (min-width: $width-desktop) {
+      .text-field__label::after {
+        right: 16px;
+      }
+    }
+  }
+
+  &--email {
+    .text-field__label::after {
+      mask-image: url("../../icons/stack.svg#icon-mail");
+      mask-size: 18px 14px;
+    }
+  }
+
+  &--phone {
+    .text-field__label::after {
+      mask-image: url("../../icons/stack.svg#icon-phone");
+      mask-size: 16px 16px;
+    }
+  }
+
+  &--error {
+    .text-field__label::after {
+      background-color: $input-icon-error;
+    }
+
+    input {
+      outline: 2px solid $border-color-error;
+      outline-offset: -2px;
+    }
+  }
+}
+
+.text-field__label {
+  display: grid;
+  grid-template-columns: auto minmax(50%, 1fr);
+  gap: 14px;
+  align-items: center;
+
+  @include title-uppercase(16,18);
+  color: $text-color-secondary;
+
+  @media (min-width: $width-tablet) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.text-field__label-text {
+  overflow-wrap: anywhere;
+}
+
+.text-field__input {
+  margin: 0;
+}

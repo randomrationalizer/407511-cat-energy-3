@@ -1,8 +1,18 @@
 .input {
-  padding: 13px;
+  padding: 10px 14px 9px;
 
-  @include input(20);
+  @include input(16, 18);
   border: 1px solid $input-border;
+
+  &[type="number"] {
+    appearance: textfield;
+  }
+
+  &[type="number"]::-webkit-outer-spin-button,
+  &[type="number"]::-webkit-inner-spin-button {
+    appearance: none;
+    margin: 0;
+  }
 
   &::placeholder {
     color: $input-placeholder-color;
@@ -21,8 +31,29 @@
     opacity: 0.4;
   }
 
-  // &:invalid {
-  // outline: 2px solid $border-color-error;
-  // outline-offset: -2px;
-  // }
+  @media (min-width: $width-tablet) {
+    padding: 11px 20px 10px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  &--textarea {
+    padding-top: 13px;
+
+    @media (min-width: $width-tablet) {
+      padding: 15px 20px;
+    }
+  }
+
+  &--size-xl {
+    font-size: 20px;
+    line-height: 20px;
+    padding: 13px;
+  }
+
+  &--error,
+  :invalid {
+    outline: 2px solid $border-color-error;
+    outline-offset: -2px;
+  }
 }

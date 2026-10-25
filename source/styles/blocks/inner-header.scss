@@ -1,3 +1,24 @@
+.inner-header {
+  &--form {
+    .inner-header__title {
+      margin-bottom: 37px;
+    }
+
+    @media (min-width: $width-tablet) {
+      .inner-header__title {
+        margin-bottom: 54px;
+        padding: 0 40px;
+      }
+    }
+
+    @media (min-width: $width-desktop) {
+      .inner-header__title {
+        padding: 0;
+      }
+    }
+  }
+}
+
 .inner-header__title {
   margin-top: 28px;
   margin-bottom: 41px;
